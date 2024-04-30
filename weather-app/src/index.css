@@ -42,42 +42,45 @@ h1 {
 }
 
 .container {
-  max-width: 700px;
-  height: 700px;
-  margin: auto;
+  max-width: auto;
+  height: auto;
+  margin-left: 25%;
   padding: 0 1rem;
   position: relative;
   top: 10%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 }
 
 .app .top {
-  width: 100%;
+  width: 50%;
   margin: 1rem auto;
 }
 
 .app .description {
   position: relative;
-  right: -90%;
   transform-origin: 0 0;
-  transform: rotate(270deg);
+}
+
+.app .description-p {
+  font-size: 18px;
 }
 
 .app .bottom{
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  width: 100%;
+  width: 50%;
   margin: 1rem auto;
   padding: 1rem;
-  border-radius: 12px;
-  background-color: rgba(255,255,255,0.2);
 }
 
 .bold {
   font-weight: 700;
+  font-size: 30px;
 }
 
 .app .search {
@@ -96,4 +99,25 @@ h1 {
 
 ::placeholder {
   color: #f8f8f8
+}
+
+.app .humidity {
+  width: 30%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 2%;
+}
+
+.app .feels {
+  width: 30%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 2%;
+}
+
+.app .wind {
+  width: 30%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 2%;
 }
